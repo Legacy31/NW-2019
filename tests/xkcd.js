@@ -1,5 +1,5 @@
 module.exports = {
-    '@disabled': true,
+    '@disabled': false,
     'Test xkcd.com - step 1': function (browser) {
         /* ==========Scenario=============
         1. As a user, I navigate to "https://xkcd.com/";
@@ -17,6 +17,7 @@ module.exports = {
         var str_pictUrl = '';   //home picture url
 
         browser
+            .windowMaximize()
             .url(str_url) //1
             .waitForElementVisible('body')
             .assert.urlEquals(str_url)

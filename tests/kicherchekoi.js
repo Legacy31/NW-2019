@@ -1,5 +1,5 @@
 module.exports = {
-    '@disabled': true,
+    '@disabled': false,
     'Test kicherchekoi.com - step 1': function (browser) {
         /* ==========Scenario=============
         1. As a user, I navigate to "https://kicherchekoi.com";
@@ -24,6 +24,7 @@ module.exports = {
         var str_url = 'https://kicherchekoi.com/';   //home page url
 
         browser
+            .windowMaximize()
             .url(str_url) //1
             .waitForElementVisible('body')
             .expect.element('.home-main-title').text.contains('Achetez, vendez en toute sérénité'); //2
