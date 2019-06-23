@@ -1,0 +1,17 @@
+{
+  "name": "test-peopledoc",
+  "version": "0.0.0",
+  "description": "technical tests for SET position",
+  "author": "Fabien VIARNES",
+  "main": "main.js",
+  "license": "ISC",
+  "scripts": {
+    "test": "node_modules/.bin/nightwatch"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chromedriver": "^75.0.0",
+    "nightwatch": "^1.1.12"
+  },
+  "dependencies": {}
+}
